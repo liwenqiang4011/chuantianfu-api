@@ -1,0 +1,25 @@
+{
+  "name": "chuantianfu",
+  "version": "1.0.0",
+  "description": "川天府API子系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liwenqiang4011/chuantianfu-api.git"
+  },
+  "author": "chuantianfu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liwenqiang4011/chuantianfu-api/issues"
+  },
+  "homepage": "https://github.com/liwenqiang4011/chuantianfu-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
