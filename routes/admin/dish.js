@@ -13,7 +13,7 @@ module.exports = router;
 * [
 *   {cid: 1, cname:'肉类', dishList:[{},{},...]}
 *   {cid: 2, cname:'菜类', dishList:[{},{},...]}
-*   ....
+*   .....
 * ]
 */
 
