@@ -9,7 +9,7 @@ module.exports=router;
  * API: GET/admin/category  RESTful 风格的API
  * 含义：客户端获取所有的菜品类别，按编号升序排列
  * 返回值形如：
- * [{cid:1,cname:'...'},{...}...]
+ * [{cid:1,cname:'...'},{...}....]
  */
 router.get('/',(req,res)=>{
     pool.query('SELECT * FROM ctf_category ORDER BY cid',(err,result)=>{
