@@ -86,7 +86,7 @@ function randFileName(suffix){
  /*
   *DELETE /admin/dish/:did
   *根据指定的菜品编号删除该菜品
-  *输出数据：
+  *输出数据： 
   *{code:200,msg:'dish deleted succ'} 
   *{code:400,msg:'dish not exists'}
   */
