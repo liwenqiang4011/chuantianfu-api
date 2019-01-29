@@ -65,6 +65,21 @@
                 console.log(err)
             })
         }
+        bt6.onclick=function(){
+            var data={
+                    did:100013,
+                    title:'大烧饼',
+                    imgUrl:'1234567.jpg',
+                    price:35,
+                    detail:'大烧饼的详细介绍',
+                    categoryId:3
+                }
+            axios.put('http://127.0.0.1:8090/admin/dish',data).then((res)=>{
+                console.log(res.data)
+            }).catch((err)=>{
+                console.log(err)
+            })
+        }
     </script>
     <br>
     <h3>文件上传</h3>

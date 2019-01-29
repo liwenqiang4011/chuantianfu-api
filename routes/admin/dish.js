@@ -111,3 +111,15 @@ function randFileName(suffix){
   *{code:200,msg:'dish updated succ'} 
   *{code:400,msg:'dish not exists'}
   */
+
+ router.put('/',(req,res)=>{
+    var data=req.body;
+    pool.query('UPDATE ctf_dish SET ? WHERE did=?',[data,data.did],(err,result)=>{
+        if(err)throw err;
+        if(result.affectedRows>0){
+            res.send({code:200,msg:'dish deleted succ'})
+        }else{
+            res.send({code:400,msg:'dish not exists'})
+        }
+    })
+})
