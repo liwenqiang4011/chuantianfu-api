@@ -58,7 +58,7 @@ router.post('/',(req,res)=>{
     pool.query('INSERT INTO ctf_category SET ?',data,(err,result)=>{//注意此处SQL语句简写
         if(err)throw err;
         if(result.affectedRows>0){
-            res.send({code:200,msg:'1 category added'})
+            res.send({code:200,msg:'1 category added',cid:result.insertId})
         }
     })
 })
