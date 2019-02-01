@@ -1,7 +1,8 @@
 /**
  * 川天府扫码点餐项目API子系统
  */
-const PORT =8090;
+//const PORT =8090;
+const PORT = 5050;
 const express=require('express');
 const categoryRouter=require('./routes/admin/category');
 const adminRouter=require('./routes/admin/admin');
